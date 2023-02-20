@@ -46,6 +46,11 @@ form input{
     border-radius: 50%;
 }
 
+.darkLigth input:hover{
+    background-color: #fff;
+    color: #3a4452;
+}
+
 .display{
     display: flex;
     justify-content: flex-end;
@@ -63,9 +68,8 @@ form input{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
 }
 
-.equal{
-   
+.buttons input:hover{
+    font-size: 30px;
 }
