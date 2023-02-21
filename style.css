@@ -1,3 +1,9 @@
+:root{
+    --cor1: #e3f9ff;
+    --cor2: #3a4452;
+    --shadow: -8px -8px 15px rgb(255, 255, 255, 0.1), 5px 5px 15px rgb(0, 0, 0, 0.3);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,47 +14,48 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: #e3f9ff;
+    background-color: var(--cor1);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .calculator{
-    background-color: #3a4452;
+    background-color: var(--cor2);
     padding: 20px;
     border-radius: 10px;
 }
 
-form input{
+.calculator input{
     border: 0;
     outline: 0;
     width: 60px;
     height: 60px;
     border-radius: 10px;
-    box-shadow: -8px -8px 15px rgb(255, 255, 255, 0.1), 5px 5px 15px rgb(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
     background-color: transparent;
     font-size: 20px;
-    color: #fff;
+    font-weight: 600;
+    color: var(--cor1);
     cursor: pointer;
     margin: 10px;
 }
 
-.darkLigth{
+.themeSwitcher{
     display: flex;
     justify-content: flex-end;
 }
 
-.darkLigth input{
+.themeSwitcher input{
     font-size: 1rem;
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
-.darkLigth input:hover{
-    background-color: #fff;
-    color: #3a4452;
+.themeSwitcher input:hover{
+    background-color: var(--cor1);
+    color: var(--cor2);
 }
 
 .display{
@@ -61,7 +68,6 @@ form input{
     text-align: right;
     flex: 1;
     font-size: 45px;
-    cursor: text;
 }
 
 .buttons{
