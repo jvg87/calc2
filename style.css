@@ -1,6 +1,7 @@
 :root{
     --cor1: #e3f9ff;
     --cor2: #3a4452;
+    --cor3: #33ffda;
     --shadow: -8px -8px 15px rgb(255, 255, 255, 0.1), 5px 5px 15px rgb(0, 0, 0, 0.3);
 }
 
@@ -24,6 +25,7 @@
     background-color: var(--cor2);
     padding: 20px;
     border-radius: 10px;
+    box-shadow: var(--shadow);
 }
 
 .calculator input{
@@ -68,6 +70,7 @@
     text-align: right;
     flex: 1;
     font-size: 45px;
+    box-shadow: 8px 8px 15px rgb(255, 255, 255, 0.1), -5px -5px 15px rgb(0, 0, 0, 0.3);;
 }
 
 .buttons{
@@ -79,3 +82,8 @@
 .buttons input:hover{
     font-size: 30px;
 }
+
+.buttons .operator{
+    color: var(--cor3);
+}
+

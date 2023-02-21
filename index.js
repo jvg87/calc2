@@ -5,10 +5,12 @@ document.querySelector('.themeSwitcher').addEventListener('click', () => {
     if(main.dataset.theme === 'dark'){
         root.style.setProperty('--cor1', '#3a4452')
         root.style.setProperty('--cor2', '#e3f9ff')
+        root.style.setProperty('--cor3', '#25a089')
         main.dataset.theme ='light'
     } else {
         root.style.setProperty('--cor1', '#e3f9ff')
         root.style.setProperty('--cor2', '#3a4452')
+        root.style.setProperty('--cor3', '#33ffda')
         main.dataset.theme ='dark'
     }
 })
@@ -46,7 +48,6 @@ buttons.map((btn) => {
 
 document.querySelector('.clear').addEventListener('click', () => {
     display.value = ''
-    display.focus()
 })
 
 
